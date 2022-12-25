@@ -12,7 +12,7 @@ app.use(express.urlencoded())
 app.use(cors())
 
 //mongoose connection
-mongoose.connect(process.env.Mongo_URL,
+mongoose.connect(process.env.MONGO_URL,
 {useNewUrlParser: true,useUnifiedTopology:true},()=>{
     console.log("DB conected")
 })
